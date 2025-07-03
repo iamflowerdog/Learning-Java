@@ -1,15 +1,19 @@
 
-public class Dog {
+package subfolder;
+// Cat.java
+
+
+public class Cat {
     // Attributes
     private String name;
     private int age;
-    private String breed;
+    private String color;
 
     // Constructor
-    public Dog(String name, int age, String breed) {
+    public Cat(String name, int age, String color) {
         this.name = name;
         this.age = age;
-        this.breed = breed;
+        this.color = color;
     }
 
     // Getters and Setters
@@ -29,18 +33,18 @@ public class Dog {
         this.age = age;
     }
 
-    public String getBreed() {
-        return breed;
+    public String getColor() {
+        return color;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    // Method to display dog information
+    // Method to display cat information
     public void displayInfo() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
-        System.out.println("Breed: " + breed);
+        System.out.println("Color: " + color);
     }
 }

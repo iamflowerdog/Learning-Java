@@ -1,6 +1,5 @@
-package subfolder;
-
-import Dog;
+import subfolder.Cat;
+import subfolder.Dog;
 
 public class Main {
     public static void main(String[] args) {

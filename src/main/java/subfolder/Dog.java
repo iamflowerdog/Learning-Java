@@ -1,20 +1,16 @@
-
 package subfolder;
-// Cat.java
-// This class represents a Cat with attributes and methods to manage its state.
 
-
-public class Cat {
+public class Dog {
     // Attributes
     private String name;
     private int age;
-    private String color;
+    private String breed;
 
     // Constructor
-    public Cat(String name, int age, String color) {
+    public Dog(String name, int age, String breed) {
         this.name = name;
         this.age = age;
-        this.color = color;
+        this.breed = breed;
     }
 
     // Getters and Setters
@@ -34,18 +30,18 @@ public class Cat {
         this.age = age;
     }
 
-    public String getColor() {
-        return color;
+    public String getBreed() {
+        return breed;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
-    // Method to display cat information
+    // Method to display dog information
     public void displayInfo() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
-        System.out.println("Color: " + color);
+        System.out.println("Breed: " + breed);
     }
 }
