@@ -1,5 +1,7 @@
 import subfolder.Cat;
 import subfolder.Dog;
+import subfolder.FreshJuiceTest;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -33,5 +35,8 @@ public class Main {
         // 正确的方式是使用公共方法访问
         testDog.setName("Buddy");   // 正确：通过公共方法修改名字
         System.out.println("Dog's new name: " + testDog.getName());
+
+        // 测试 FreshJuice
+        FreshJuiceTest.main(args);
     }
 }

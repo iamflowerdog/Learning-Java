@@ -3,10 +3,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FreshJuiceTest",
+            "request": "launch",
+            "mainClass": "subfolder.FreshJuiceTest",
+            "projectName": "Learning-Java_c4144892"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",
-            "args": ["Buddy", "5", "Golden"]
+            "args": [
+                "Buddy",
+                "5",
+                "Golden"
+            ]
         }
     ]
 }
