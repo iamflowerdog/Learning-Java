@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "subfolder.Person",
+            "projectName": "Learning-Java_c4144892"
+        },
+        {
+            "type": "java",
             "name": "FreshJuiceTest",
             "request": "launch",
             "mainClass": "subfolder.FreshJuiceTest",

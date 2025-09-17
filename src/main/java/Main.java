@@ -1,13 +1,14 @@
 import subfolder.Cat;
 import subfolder.Dog;
 import subfolder.FreshJuiceTest;
+import subfolder.Person;
 
 
 public class Main {
     public static void main(String[] args) {
         // 创建 Dog 对象，使用命令行参数
         if (args.length < 3) {
-            System.out.println("请传入 name age breed 三个参数");
+            // System.out.println("请传入 name age breed 三个参数");
             return;
         }
 
@@ -34,7 +35,14 @@ public class Main {
         
         // 正确的方式是使用公共方法访问
         testDog.setName("Buddy");   // 正确：通过公共方法修改名字
-        System.out.println("Dog's new name: " + testDog.getName());
+        // System.out.println("Dog's new name: " + testDog.getName());
+
+
+        Person zhou = new Person();
+        zhou.setName("Zhou");
+        // zhou.name = "Zhang"; // 错误：name 是私有的
+        
+        System.out.println("Name: " + zhou.getName());
 
         // 测试 FreshJuice
         FreshJuiceTest.main(args);
