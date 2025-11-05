@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListDemo",
+            "request": "launch",
+            "mainClass": "ListDemo",
+            "projectName": "Learning-Java_c4144892"
+        },
+        {
+            "type": "java",
             "name": "Array",
             "request": "launch",
             "mainClass": "Array",
