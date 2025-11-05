@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "src/main/java",
         "runoob/multiutils",
-        "runoob/data-structure"
+        "runoob/data-structure",
+        "runoob/enumtest"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
