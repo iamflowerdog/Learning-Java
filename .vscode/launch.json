@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MapsDemo",
+            "request": "launch",
+            "mainClass": "MapsDemo",
+            "projectName": "Learning-Java_c4144892"
+        },
+        {
+            "type": "java",
             "name": "SetsDemo",
             "request": "launch",
             "mainClass": "SetsDemo",
