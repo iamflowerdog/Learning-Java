@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AddNumber",
+            "request": "launch",
+            "mainClass": "AddNumber",
+            "projectName": "Learning-Java_c4144892"
+        },
+        {
+            "type": "java",
             "name": "Person",
             "request": "launch",
             "mainClass": "subfolder.Person",
