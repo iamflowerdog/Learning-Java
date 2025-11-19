@@ -1,51 +1,61 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 
+// FilterRowContainer 类定义
+class FilterRowContainer {
+    private final String id;
+    private final List<String> items;
+
+    public FilterRowContainer(String id, List<String> items) {
+        this.id = id;
+        this.items = items;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public List<String> getItems() {
+        return items;
+    }
+
+    @Override
+    public String toString() {
+        return "FilterRowContainer(id=\"" + id + "\", items=" + items + ")";
+    }
+}
+
 public class ListDemo {
-    
+
 
 
     public static void main(String[] args) {
 
+        // 创建 FilterRowContainer 列表
+        List<FilterRowContainer> rowContainerList = new ArrayList<FilterRowContainer>();
 
-        List<Object> list = new ArrayList<>();
+        int size = rowContainerList.size();
+        System.out.println("Initial size: " + size);
 
-        list.add(10);
-        list.add(20);
+        FilterRowContainer container1 = new FilterRowContainer(String.valueOf(size), List.of("a"));
 
-        list.add("30"); 
-        list.add(40.5);
-        list.add(true);
+        rowContainerList.add(container1);
 
-        for (Object item : list) {
-            System.out.println("Item: " + item);
+        System.out.println("Size after adding one container: " + rowContainerList.size());
+
+        
+        // 方法1：逐个添加
+        // rowContainerList.add(new FilterRowContainer("0", List.of("A", "B", "C")));
+        // rowContainerList.add(new FilterRowContainer("1", List.of("D", "E")));
+        
+        // 打印结果
+        System.out.println("FilterRowContainer List:");
+        for (FilterRowContainer container : rowContainerList) {
+            System.out.println(container);
         }
+        
+        System.out.println("\n---分隔线---\n");
 
-        List<Object> linkList = new LinkedList<>();
-        linkList.add("Apple");
-        linkList.add(234);
-        linkList.add(56.78);
-        linkList.add(false);    
-
-        // int[] numbers = {1, 2, 3, 4, 5};
-
-
-        // System.out.println("\n LinkedList contents:" + linkList);
-
-
-        linkList.forEach(item -> {
-            System.out.println("LinkedList Item: " + item);
-        });
-
-        list.forEach(item -> {
-            System.out.println("ArrayList Item: " + item);
-        });
-
-
-
-
-        System.out.println("\n This is a placeholder for the List class." + list);
     }
 }
